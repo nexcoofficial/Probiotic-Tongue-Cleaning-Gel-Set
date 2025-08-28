@@ -2,681 +2,553 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <title>Probiotic Tongue Cleaning Gel Set | Luxury Oral Care Indonesia</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
-  <meta name="description" content="Gel Pembersih Lidah Probiotik Premium. Beli Sekarang, 10.000+ Terjual, Harga Paket Spesial!">
-  <link rel="preconnect" href="https://cdn.cloudfastcdn.com" crossorigin>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Probiotic Tongue Cleaning Gel Set | Hemat & Terpercaya!</title>
+  <meta name="description" content="Gel pembersih lidah probiotik dengan harga terjangkau, ribuan terjual! Beli 1 set atau paket hemat. Pesan sekarang, mulut sehat & segar setiap hari!">
+  <link rel="preconnect" href="https://cdn.cloudfastcdn.com">
+  <link rel="preconnect" href="https://cdn.orderonline.id">
   <style>
     :root {
-      --luxury-gold: #c8aa6e;
-      --luxury-bg: #fffaf3;
-      --luxury-dark: #2d2a26;
-      --accent: #23c0b7;
-      --danger: #e63c1a;
-      --border-radius: 1.2rem;
-      --shadow: 0 2px 12px 0 rgba(200,170,110,0.12);
+      --primary: #00b9b0;
+      --secondary: #f8fafc;
+      --accent: #feb81d;
+      --danger: #e53935;
+      --success: #43a047;
+      --gray: #888;
+      --dark: #222;
+      --radius: 1.1rem;
+      --shadow: 0 6px 24px rgba(0,0,0,0.10);
       --font-main: 'Inter', Arial, sans-serif;
     }
-    html, body {
-      margin: 0; padding: 0;
-      background: var(--luxury-bg);
-      color: var(--luxury-dark);
-      font-family: var(--font-main);
-      font-size: 16px;
-      scroll-behavior: smooth;
-      overflow-x: hidden;
-    }
+    html {scroll-behavior: smooth;}
     body {
+      font-family: var(--font-main);
+      background: var(--secondary);
+      color: var(--dark);
+      margin: 0; padding: 0;
+      line-height: 1.6;
       min-height: 100vh;
-      display: flex;
-      flex-direction: column;
     }
-    /* HERO SECTION */
-    .hero {
-      background: linear-gradient(120deg, #fffbe6 60%, #f8ecd2 100%);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 2.6rem 1rem 1.2rem 1rem;
-      position: relative;
+    a { color: var(--primary); text-decoration: none; }
+    .container {max-width: 430px; margin: 0 auto; padding: 0 1rem;}
+    header {
+      background: linear-gradient(120deg, var(--primary) 70%, var(--success));
+      color: #fff;
+      padding: 1.7rem 0 1rem 0;
       text-align: center;
-    }
-    .hero__badge {
-      color: var(--luxury-gold);
-      font-size: 1.1rem;
-      background: rgba(200,170,110,0.1);
-      border-radius: 999px;
-      padding: 0.35em 1.2em;
-      display: inline-block;
-      margin-bottom: 0.7em;
-      font-weight: 600;
-      letter-spacing: 1px;
       box-shadow: var(--shadow);
-      animation: badgePop .8s cubic-bezier(.6,2,.5,1.2);
+      position: relative;
     }
-    @keyframes badgePop {
-      0% { transform: scale(.5); opacity:0;}
-      80% { transform: scale(1.1);}
-      100% { transform: scale(1); opacity:1;}
+    .tagline {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 0.3rem;
+      letter-spacing: .01em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: .5em;
+      animation: fadein 1s;
     }
-    .hero__img {
-      box-shadow: 0 8px 24px 0 rgba(0,0,0,0.07);
-      border-radius: var(--border-radius);
-      margin-bottom: 1.1rem;
-      /* Updated size and fit for bigger, uncropped image */
-      width: 98vw;
-      max-width: 540px;
-      max-height: 76vw;
-      aspect-ratio: 4/5;
-      object-fit: contain;
-      background: #fff;
-      display: block;
-      animation: fadeIn 1.2s;
-    }
-    @media (max-width: 600px) {
-      .hero__img {
-        width: 100vw;
-        max-width: 100vw;
-        max-height: 80vw;
-        aspect-ratio: 1/1.14;
-      }
-    }
-    @keyframes fadeIn { from { opacity:0; transform:translateY(40px);} to {opacity:1; transform:translateY(0);} }
-    .hero__title {
+    .tagline .star {color: var(--accent);}
+    h1 {
       font-size: 2rem;
       font-weight: 800;
-      margin-bottom: .4em;
-      color: var(--luxury-dark);
-      line-height: 1.13;
-      text-shadow: 0 1px 0 #f3e2b7;
+      margin: 0.15em 0 0.25em 0;
+      line-height: 1.08;
+      letter-spacing: -1.5px;
+      text-shadow: 0 1px 6px rgba(0,0,0,.09);
+      animation: fadein 1.2s;
     }
-    .hero__subtitle {
-      font-size: 1.12rem;
-      color: #8d7e5d;
-      font-weight: 500;
-      margin-bottom: 1.5em;
-    }
-    .hero__cta {
-      background: linear-gradient(90deg,var(--luxury-gold) 40%,var(--accent) 100%);
-      color: #fff;
-      border: none;
-      border-radius: 999px;
-      font-size: 1.15rem;
-      font-weight: 700;
-      padding: 0.8em 2.1em;
-      box-shadow: var(--shadow);
-      cursor: pointer;
-      margin-bottom: 1.3em;
-      transition: background .2s, box-shadow .2s, transform .2s;
-      outline: none;
-      letter-spacing: 1px;
-      animation: ctaBounce 2.2s infinite cubic-bezier(.65,0,.56,1.5);
-    }
-    @keyframes ctaBounce {
-      0%,80%,100% {transform:translateY(0);}
-      60% {transform:translateY(-8px);}
-    }
-    .hero__order-counts {
+    .hero-img-wrap {
       display: flex;
       justify-content: center;
-      gap: 2rem;
-      margin-bottom: 1.3rem;
-      font-size:1.07rem;
-      color:#b69a67;
-    }
-    .hero__order-count .value {
-      font-weight:700;
-      font-size:1.25em;
-      color:var(--luxury-dark);
-      letter-spacing:.5px;
-      margin-right:2.5px;
-    }
-    /* BENEFITS */
-    .benefits {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1.2rem;
-      padding: 2.1rem 1.1rem 1.2rem 1.1rem;
-      background: #fff;
-      border-radius: var(--border-radius);
-      max-width: 730px;
-      margin: -40px auto 0 auto;
-      box-shadow: var(--shadow);
-      z-index: 1;
-      position: relative;
-    }
-    .benefit {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      gap: .5rem;
-      font-size: 1rem;
-      font-weight: 500;
-      color: var(--luxury-dark);
-      background: #f8ecd2;
-      border-radius: 1em;
-      padding: 1em 1.2em .8em .8em;
-      box-shadow: 0 1px 9px 0 rgba(200,170,110,0.07);
-      min-height: 110px;
-      border-left: 5px solid var(--luxury-gold);
-      animation: benefitSlideIn 1.2s;
-    }
-    @keyframes benefitSlideIn {
-      from {opacity:0; transform:translateY(30px);}
-      to {opacity:1; transform:translateY(0);}
-    }
-    .benefit .emoji {font-size:1.7em;}
-    /* PACKAGE PRICING + COUNTDOWN */
-    .package-section {
-      padding: 2.5rem 1.2rem 1.2rem 1.2rem;
-      text-align: center;
-      background: #fffaf3;
-      margin: 0 -1rem;
-    }
-    .package-section h2 {
-      color: var(--luxury-gold);
-      font-size: 1.4rem;
-      margin-bottom: .5em;
-      font-weight: 700;
-      letter-spacing:.5px;
-    }
-    .packages {
-      display: flex;
-      flex-direction: column;
-      gap: 1.3rem;
-      max-width: 740px;
-      margin: 0 auto 1.3rem auto;
-    }
-    .package {
-      background: #fff;
-      border-radius: 1.3rem;
-      box-shadow: var(--shadow);
-      padding: 1.4em 1.1em 1.2em 1.1em;
-      display: flex;
-      flex-direction: column;
       align-items: center;
-      border: 2px solid var(--luxury-gold);
-      transition: box-shadow .18s;
+      margin-top: 1rem;
+      margin-bottom: 0.6rem;
       position: relative;
-      animation: fadeIn .7s;
     }
-    .package .label {
+    .hero-img-main {
+      border-radius: var(--radius) 1.8rem 1.1rem 1.1rem;
+      box-shadow: 0 10px 40px rgba(0,0,0,.13);
+      width: 97%;
+      max-width: 350px;
+      border: 5px solid #fff;
+      object-fit: cover;
+      animation: popin 1.2s cubic-bezier(.42,1.16,.78,1.03);
+    }
+    .badge-sale {
+      position: absolute;
+      right: 1.1rem;
+      top: 1rem;
       background: var(--accent);
       color: #fff;
-      font-size: .94em;
-      padding: .2em 1.1em;
-      border-radius: 999px;
-      font-weight: 600;
-      letter-spacing:.5px;
-      margin-bottom: .4em;
-      box-shadow: 0 1px 7px 0 rgba(35,192,183,0.09);
-      position: absolute;
-      top: -18px; left: 50%; transform:translateX(-50%);
-      z-index:3;
-      animation: badgePop .8s cubic-bezier(.6,2,.5,1.2);
+      font-weight: bold;
+      padding: 0.3em 1.05em;
+      border-radius: 18px;
+      font-size: .98em;
+      box-shadow: 0 3px 12px rgba(254,184,29,0.13);
+      animation: bounce 1.3s;
     }
-    .package .price-row {
+    .countdown-wrap {
+      display: flex;
+      justify-content: center;
+      gap: .8em;
+      margin: 1.1em 0 .7em 0;
+      font-size: 1.12em;
+      font-weight: 600;
+      color: var(--danger);
+      letter-spacing: .04em;
+      background: #fff7ec;
+      border-radius: 0.8em;
+      padding: .6em 0;
+      box-shadow: 0 2px 8px rgba(254,184,29,0.04);
+      animation: fadein 1.3s;
+    }
+    .countdown-segment span {
+      display: block;
+      font-size: .72em;
+      color: var(--gray);
+      font-weight: normal;
+    }
+    .price-table {
+      background: #fff;
+      border-radius: 1.1em;
+      box-shadow: var(--shadow);
+      margin: 1.5em 0;
+      padding: 1.1em 0.5em 0.5em 0.5em;
+      animation: fadein-up 1.15s;
+    }
+    .price-row {
       display: flex;
       align-items: center;
-      gap: .7em;
-      margin: .7em 0;
-    }
-    .package .price-now {
-      font-size: 1.7em;
-      font-weight: 900;
-      color: var(--danger);
-      margin-right: .2em;
-      font-variant-numeric: tabular-nums;
-    }
-    .package .price-old {
-      text-decoration: line-through;
-      color: #8d7e5d;
-      font-size: 1.1em;
-      margin-left: .7em;
-      font-weight: 500;
-    }
-    .package .desc {
-      color: #7b755d;
-      font-size: .97em;
-      margin-bottom: 0.8em;
-      margin-top: .1em;
-    }
-    .package .btn-order {
-      margin-top:0.3em;
-      background: var(--luxury-gold);
-      color: #fff;
-      font-weight: 700;
-      font-size: 1.1em;
-      border: none;
-      border-radius: 999px;
-      padding: .7em 2.1em;
-      box-shadow: var(--shadow);
-      cursor: pointer;
-      letter-spacing:.5px;
-      transition: background .18s,transform .15s;
-      outline: none;
-      animation: ctaBounce 2.2s infinite cubic-bezier(.65,0,.56,1.5);
-    }
-    /* COUNTDOWN TIMER */
-    .countdown {
-      display: inline-flex;
-      justify-content: center;
-      gap: 1.2em;
-      margin-bottom: 1.1em;
-      font-size: 1.12em;
-      font-weight: 700;
-      color: var(--danger);
-      background: #fff4e7;
-      border-radius: 999px;
-      padding: .6em 1.6em;
-      box-shadow: 0 1px 8px 0 rgba(230,60,26,0.06);
-      letter-spacing:.8px;
-      animation: fadeIn .7s;
-    }
-    .countdown span {
-      min-width: 2.4em;
-      text-align: center;
-      font-variant-numeric: tabular-nums;
-    }
-    /* IMAGE GALLERY */
-    .gallery {
-      display: flex;
-      gap: .7rem;
-      overflow-x: auto;
-      padding: 1.2em 0 .7em 0;
-      margin: 0 -1.2em;
-      scrollbar-width: thin;
-      scrollbar-color: var(--luxury-gold) #fffaf3;
-      scroll-snap-type: x mandatory;
-    }
-    .gallery img {
-      border-radius: 1.2em;
-      height: 220px;
-      width: auto;
-      min-width: 195px;
-      box-shadow: 0 1px 9px 0 rgba(200,170,110,0.10);
-      object-fit: contain;
-      background: #fff;
-      scroll-snap-align: start;
-      border: 2px solid #fff8e2;
-      transition: transform .18s;
-      display: block;
-      /* Aspect ratio so images don't get cropped */
-      aspect-ratio: 4/5;
-    }
-    .gallery img:active, .gallery img:focus {transform:scale(1.08);}
-    @media (max-width: 600px) {
-      .gallery img {
-        height: 140px;
-        min-width: 120px;
-        aspect-ratio: 1/1.1;
-      }
-    }
-    /* TESTIMONIALS */
-    .testimonials {
-      max-width: 730px;
-      margin: 2rem auto 1.5rem auto;
-      padding: 0 1.2rem;
-    }
-    .testimonials h3 {
-      color: var(--luxury-gold);
-      font-size: 1.24rem;
-      font-weight: 700;
-      text-align: center;
-      margin-bottom: .7em;
-      letter-spacing:.5px;
-    }
-    .testi-list {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1.2rem;
-    }
-    .testi {
-      background: #fff;
-      border-radius: 1em;
-      box-shadow: var(--shadow);
-      padding: 1.1em .9em .9em .9em;
+      justify-content: space-between;
+      padding: 0.65em 0.7em 0.65em 0.7em;
+      margin-bottom: 0.3em;
+      border-radius: 0.7em;
+      transition: background .14s;
       position: relative;
-      border-left: 5px solid var(--luxury-gold);
-      animation: benefitSlideIn 1.1s;
-      font-size: 1em;
     }
-    .testi .name {
+    .price-row.best {
+      background: linear-gradient(90deg, #fff9e5 60%, var(--accent) 100%);
+      border: 2px solid var(--accent);
+      color: var(--dark);
       font-weight: 700;
-      color: var(--luxury-gold);
-      margin-top: 0.4em;
-      font-size: .97em;
+      box-shadow: 0 4px 24px rgba(254,184,29,0.08);
+      transform: scale(1.03);
     }
-    .testi .stars {
-      color: #f7b900;
-      font-size: 1.1em;
-      margin-bottom: .3em;
+    .strike {color: #bbb; text-decoration: line-through; font-size: .93em; margin-right: .7em;}
+    .price-now {font-size: 1.25em; font-weight: 700; color: var(--success);}
+    .desc {font-size: .97em; color: var(--gray);}
+    .order-btn, .sticky-order-btn {
       display: block;
-    }
-    /* URGENCY / BANNER */
-    .urgency {
-      background: linear-gradient(90deg, #ffe8d0 65%, #ffe4e0 100%);
-      color: #a42121;
+      width: 100%;
+      margin: 1em 0 .2em 0;
+      padding: 1em 0;
+      background: linear-gradient(90deg, var(--primary), var(--success));
+      color: #fff;
+      border: none;
+      border-radius: 1.2em;
+      font-size: 1.25em;
       font-weight: 700;
-      font-size: 1.05em;
-      padding: .8em 1.2em;
-      border-radius: 1em;
-      max-width: 520px;
-      margin: 1rem auto 0 auto;
-      text-align: center;
-      box-shadow: 0 1px 7px 0 rgba(230,60,26,0.06);
-      letter-spacing:.4px;
-      animation: fadeIn .8s;
+      box-shadow: 0 6px 24px rgba(0,185,176,0.10);
+      cursor: pointer;
+      transition: transform .08s, background .18s;
+      outline: none;
+      letter-spacing: .02em;
+      animation: popin .7s;
     }
-    /* STICKY PRICE BANNER */
-    .sticky-banner {
+    .order-btn:hover, .sticky-order-btn:hover {
+      transform: scale(1.035);
+      background: linear-gradient(90deg, var(--success), var(--primary));
+      box-shadow: 0 10px 32px rgba(0,185,176,0.13);
+    }
+    .benefits-wrap {
+      margin: 2em 0 .8em 0;
+    }
+    .benefit {
+      background: #fff;
+      border-radius: .9em;
+      padding: 1em 1em .6em 1em;
+      display: flex;
+      align-items: flex-start;
+      gap: .85em;
+      margin-bottom: 1em;
+      box-shadow: 0 2px 12px rgba(0,185,176,0.06);
+      animation: fadein-up .65s;
+    }
+    .benefit-icon {
+      width: 2.5em; height: 2.5em;
+      flex-shrink: 0;
+      display: flex; align-items: center; justify-content: center;
+      border-radius: 50%;
+      background: var(--primary);
+      color: #fff;
+      font-size: 1.3em;
+      box-shadow: 0 2px 8px rgba(0,185,176,0.11);
+      margin-top: 0.13em;
+      animation: popin .6s;
+    }
+    .benefit-content h3 {margin: 0 0 .13em 0; font-size: 1.12em; font-weight: 700;}
+    .benefit-content p {margin: 0; font-size: .97em; color: var(--gray);}
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: .6em;
+      margin: 2em 0 1.3em 0;
+      animation: fadein-up 1.2s;
+    }
+    .gallery img, .gallery video {
+      width: 100%;
+      border-radius: 0.7em;
+      object-fit: cover;
+      background: #f8fafc;
+      box-shadow: 0 2px 10px rgba(0,185,176,0.07);
+      transition: transform .14s;
+      cursor: pointer;
+    }
+    .gallery img:hover, .gallery video:hover {
+      transform: scale(1.04);
+    }
+    .testimonials-wrap {
+      margin: 2.3em 0 1.5em 0;
+      animation: fadein-up 1.2s;
+    }
+    .testimonial {
+      background: #fff;
+      border-radius: .8em;
+      box-shadow: 0 2px 12px rgba(0,185,176,0.07);
+      padding: 1em 0.8em 0.6em 0.8em;
+      margin-bottom: 0.8em;
+      display: flex;
+      gap: 0.9em;
+      align-items: flex-start;
+    }
+    .testimonial-avatar {
+      width: 2.3em;
+      height: 2.3em;
+      border-radius: 50%;
+      background: #f8fafc;
+      object-fit: cover;
+      flex-shrink: 0;
+      border: 2px solid var(--primary);
+    }
+    .testimonial-content {
+      flex: 1;
+    }
+    .testimonial-content .name {
+      font-weight: 700;
+      font-size: 1em;
+      color: var(--primary);
+      margin-bottom: 0.1em;
+    }
+    .testimonial-content .text {
+      font-size: .96em;
+      color: var(--gray);
+      margin-bottom: .07em;
+    }
+    .testimonial-content .stars {
+      color: var(--accent);
+      font-size: .98em;
+      margin-bottom: 0.12em;
+    }
+    .urgency-msg {
+      background: #fff7ec;
+      color: var(--danger);
+      border-left: 5px solid var(--danger);
+      font-weight: 700;
+      font-size: 1.08em;
+      padding: .7em 1.1em;
+      border-radius: 0 1em 1em 0;
+      margin-top: 1.2em;
+      margin-bottom: .6em;
+      box-shadow: 0 2px 12px rgba(254,184,29,0.07);
+      animation: fadein .95s;
+      display: flex; align-items: center;
+      gap: .7em;
+    }
+    .sticky-order-bar {
       position: fixed;
       left: 0; right: 0; bottom: 0;
-      background: linear-gradient(90deg,var(--luxury-gold) 45%,var(--accent) 100%);
-      color: #fff;
-      z-index: 999;
+      background: #fff;
+      box-shadow: 0 -2px 22px rgba(0,185,176,0.09);
+      z-index: 99;
+      padding: .8em 0 .4em 0;
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      padding: .7em 1em .7em 1em;
-      font-size: 1.09em;
-      font-weight: 600;
-      box-shadow: 0 -2px 8px 0 rgba(200,170,110,0.15);
-      border-radius: 1.1em 1.1em 0 0;
-      animation: stickySlideUp .7s cubic-bezier(.57,1.9,.35,1.06);
+      justify-content: space-between;
+      gap: .9em;
+      max-width: 430px;
+      margin: 0 auto;
+      border-top-left-radius: 1.2em;
+      border-top-right-radius: 1.2em;
+      animation: slideup .45s;
     }
-    @keyframes stickySlideUp { from {transform: translateY(80px); opacity:0;} to {transform: translateY(0);opacity:1;} }
-    .sticky-banner .left {
-      display: flex;
-      flex-direction: column;
-      gap: 0.07em;
-    }
-    .sticky-banner .price {
-      font-size: 1.25em;
-      font-weight: 800;
-      margin-right: .4em;
-      color: #fff;
-      letter-spacing:.3px;
-    }
-    .sticky-banner .old {
-      text-decoration: line-through;
-      color: #f7d698;
-      font-size: .93em;
-      margin-left: .5em;
-      font-weight: 500;
-    }
-    .sticky-banner .desc {
-      color: #fff8e2;
-      font-size: .93em;
-    }
-    .sticky-banner .btn-order {
-      background: #fff;
-      color: var(--luxury-gold);
+    .sticky-price {
+      font-size: 1.15em;
+      color: var(--success);
       font-weight: 700;
-      font-size: 1.09em;
+      margin-left: 1.3rem;
+    }
+    .sticky-order-btn {
+      margin: 0 1.25rem 0 0;
+      padding: .7em 1.7em;
+      font-size: 1.05em;
+      border-radius: 2em;
+      font-weight: 700;
       border: none;
-      border-radius: 999px;
-      padding: .6em 2.2em;
-      margin-left: 1em;
-      box-shadow: var(--shadow);
+      background: linear-gradient(90deg, var(--primary), var(--success));
+      color: #fff;
+      box-shadow: 0 6px 24px rgba(0,185,176,0.10);
       cursor: pointer;
-      letter-spacing:.6px;
-      transition: background .15s, color .15s, transform .13s;
-      outline: none;
+      transition: transform .08s, background .18s;
     }
-    .sticky-banner .btn-order:active, .sticky-banner .btn-order:focus { background: #f8ecd2; color: #c8aa6e;}
+    .sticky-order-btn:hover { background: linear-gradient(90deg, var(--success), var(--primary)); }
+    .ooef {margin: 2em 0;}
+    .footer {
+      font-size: .93em;
+      color: #888;
+      text-align: center;
+      padding: 2.2em 0 1.5em 0;
+      margin-top: 2em;
+    }
+    /* Animations */
+    @keyframes fadein {from {opacity:0;} to {opacity:1;}}
+    @keyframes fadein-up {from {opacity:0; transform: translateY(36px);} to {opacity:1; transform: translateY(0);}}
+    @keyframes popin {from {scale:0.94; opacity:0;} to {scale:1; opacity:1;}}
+    @keyframes bounce {
+      0% { transform: translateY(-16px) scale(0.8);}
+      50% { transform: translateY(4px) scale(1.14);}
+      80% { transform: translateY(-7px) scale(0.92);}
+      100% { transform: translateY(0) scale(1);}
+    }
+    @keyframes slideup {from {transform: translateY(80px);} to {transform: translateY(0);}}
     /* Responsive */
-    @media (max-width: 600px) {
-      .hero__title { font-size: 1.35rem; }
-      .hero__subtitle { font-size: 1em; }
-      .benefits { grid-template-columns: 1fr; gap: .9rem; padding: 1.1rem .4rem; }
-      .testi-list { grid-template-columns: 1fr; }
-      .testimonials { padding: 0 .2rem; }
-      .gallery img { height: 140px; min-width: 120px; aspect-ratio: 1/1.1; }
-      .package-section { padding: 1.1rem .3rem; }
-      .packages { gap: .6rem;}
-      .sticky-banner { font-size: .98em; padding: .7em .2em; }
+    @media (max-width: 550px) {
+      .container, .sticky-order-bar {max-width: 100vw;}
+      .hero-img-main {max-width: 100vw;}
+      .sticky-order-bar {padding: .55em 0 .15em 0;}
+      .sticky-price {margin-left: .7rem;}
+      .sticky-order-btn {margin-right: .7rem;}
     }
-    /* Anim GIF */
-    .gif {
-      border-radius: 1.1em;
-      box-shadow: 0 1px 9px 0 rgba(200,170,110,0.08);
-      width: 100%; max-width: 370px; margin: 2rem auto 1rem auto;
-      display: block;
-      background: #fff;
-      border: 1.5px solid #fff7e2;
-      animation: fadeIn 1.2s;
+    @media (max-width: 430px) {
+      .container {padding: 0 .3em;}
+      .hero-img-main {border-width: 2.5px;}
+      .badge-sale {right:.6em;}
     }
-    /* Hide scrollbars for gallery on mobile */
-    .gallery::-webkit-scrollbar {height: 5px; background: #fffaf3;}
-    .gallery::-webkit-scrollbar-thumb {background: var(--luxury-gold); border-radius: 8px;}
   </style>
 </head>
 <body>
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero__badge">⭐⭐⭐⭐⭐ 4.9 | <span id="sold-counter">10.823</span> Terjual</div>
-    <img class="hero__img" src="https://cdn.cloudfastcdn.com/image/2023/01/5d3ddc9282a1da453b9720eddca89afdda57b9b95cd397a0695d1f015aa8ecc2-700.jpeg" alt="Probiotic Tongue Cleaning Gel Set">
-    <h1 class="hero__title">Probiotic Tongue Cleaning Gel Set</h1>
-    <div class="hero__subtitle">Gel Pembersih Lidah Probiotik + Scraper, Solusi Premium Lawan Bau Mulut & Jaga Kesehatan Mulut — Untuk Pria & Wanita Indonesia Modern</div>
-    <button class="hero__cta" onclick="orderNow()">Beli Sekarang</button>
-    <div class="hero__order-counts">
-      <span class="hero__order-count"><span class="value" id="online-viewers">135</span> Pengunjung Online</span>
-      <span class="hero__order-count"><span class="value" id="recent-orders">21</span> Pesanan hari ini</span>
+  <header>
+    <div class="tagline"><span class="star">⭐⭐⭐⭐⭐</span> 4.9 | 10Rb+ Terjual</div>
+    <h1>Probiotic Tongue Cleaning Gel Set</h1>
+    <div class="desc">Mulut bersih, napas segar, harga terjangkau! Cocok untuk pria & wanita Indonesia.</div>
+    <div class="hero-img-wrap">
+      <img class="hero-img-main" src="https://cdn.cloudfastcdn.com/image/2023/01/5d3ddc9282a1da453b9720eddca89afdda57b9b95cd397a0695d1f015aa8ecc2-700.jpeg" alt="Probiotic Tongue Cleaning Gel Set">
+      <div class="badge-sale">PAKET HEMAT!</div>
     </div>
-  </section>
-  <!-- BENEFITS -->
-  <section class="benefits">
-    <div class="benefit"><span class="emoji">🦷</span> Hilangkan Bau Mulut Instan & Tahan Lama</div>
-    <div class="benefit"><span class="emoji">🥇</span> Formula Probiotik Premium, Aman & Vegan</div>
-    <div class="benefit"><span class="emoji">🌱</span> Menjaga Keseimbangan Bakteri Baik di Mulut</div>
-    <div class="benefit"><span class="emoji">✨</span> Scraper Anti Bakteri, Hasil Mulut Lebih Segar</div>
-  </section>
-  <!-- IMAGE GALLERY -->
-  <section class="gallery" aria-label="Product Gallery">
-    <img src="https://cdn.cloudfastcdn.com/image/2023/01/332765fca56680f90c0a6b0405ed9efb6d7b00fca7bbd66819f8e85bfdc6b956-600.jpeg" alt="Gel Pembersih Lidah 1">
-    <img src="https://cdn.cloudfastcdn.com/image/2023/01/9b3350c9a7ebab01d12aed1891b4bb9eedee93758567d796db4221b075b8404d-600.jpeg" alt="Gel Pembersih Lidah 2">
-    <img src="https://cdn.cloudfastcdn.com/image/2023/01/9e7bd0a0c9e8a5767eb4a4963e69752ac1912c51edcf08f3417f1eda78b83664-600.jpeg" alt="Gel Pembersih Lidah 3">
-    <img src="https://cdn.cloudfastcdn.com/image/2023/01/3125517cbdb11e273581b18da02957c911fe51f77b0c8b37d27ef004d62abb1f-600.jpeg" alt="Gel Pembersih Lidah 4">
-    <img src="https://cdn.cloudfastcdn.com/image/2023/01/2abfbde20a4900e626d7536a49be30c141683c3ce8339e1a89b25cd299c5fa92-600.jpeg" alt="Gel Pembersih Lidah 5">
-    <img src="https://cdn.cloudfastcdn.com/image/2023/01/082a165896d4ae5d1f6b72a2193288f815ee15fdfc0252cc4569dfad970ed99c-600.jpeg" alt="Gel Pembersih Lidah 6">
-  </section>
-  <img class="gif" src="https://cdn.cloudfastcdn.com/image/2022/09/7f677527947c5040fc0ae8dd9e04ea0983ec961d85a4a81b6b54e598f9f9d072.gif" alt="Cara Pakai">
-  <!-- PACKAGE PRICING & COUNTDOWN -->
-  <section class="package-section">
-    <h2>PILIH PAKET HEMAT <span style="font-size:.8em;color:#ff8f4d;">PROMO TERBATAS!</span></h2>
-    <div class="countdown" id="countdown-timer">
-      <span id="cd-h">00</span>:<span id="cd-m">00</span>:<span id="cd-s">00</span>
+    <div class="countdown-wrap" id="countdown">
+      <div class="countdown-segment"><span>Jam</span><b id="cd-h">00</b></div>
+      <div class="countdown-segment"><span>Menit</span><b id="cd-m">00</b></div>
+      <div class="countdown-segment"><span>Detik</span><b id="cd-s">00</b></div>
+      <div style="font-size:.95em; color:var(--danger);font-weight:700">PROMO AKHIR BULAN!</div>
     </div>
-    <div class="packages">
-      <div class="package">
-        <div class="label">Paket 1 SET</div>
-        <div class="price-row">
+    <a href="#order" class="order-btn" id="cta1">Pesan Sekarang</a>
+  </header>
+  <main class="container">
+    <section class="price-table" aria-label="Paket Harga">
+      <div class="price-row">
+        <span>1 Set (Gel+Scraper)</span>
+        <span>
+          <span class="strike">Rp179.000</span>
           <span class="price-now">Rp149.000</span>
-          <span class="price-old">Rp259.000</span>
-        </div>
-        <div class="desc">1 Gel + 1 Scraper</div>
-        <button class="btn-order" onclick="orderNow()">Pesan Sekarang</button>
+        </span>
       </div>
-      <div class="package">
-        <div class="label">BUY 2 GET 1 FREE</div>
-        <div class="price-row">
+      <div class="price-row best">
+        <span>Buy 2 Get 1 <b>FREE</b></span>
+        <span>
+          <span class="strike">Rp297.000</span>
           <span class="price-now">Rp197.000</span>
-          <span class="price-old">Rp399.000</span>
-        </div>
-        <div class="desc">3 SET (3 Gel + 3 Scraper)</div>
-        <button class="btn-order" onclick="orderNow()">Ambil Promo</button>
+        </span>
       </div>
-      <div class="package">
-        <div class="label" style="background:#e63c1a;">BUY 3 GET 2 FREE</div>
-        <div class="price-row">
+      <div class="price-row">
+        <span>Buy 3 Get 2 <b>FREE</b></span>
+        <span>
+          <span class="strike">Rp445.000</span>
           <span class="price-now">Rp255.000</span>
-          <span class="price-old">Rp649.000</span>
+        </span>
+      </div>
+      <div class="desc" style="text-align: right; margin-top: .4em;">*Gratis Ongkir & Diskon Terbatas Hari Ini</div>
+    </section>
+    <section class="benefits-wrap" aria-label="Manfaat Produk">
+      <div class="benefit">
+        <div class="benefit-icon"><span>🦷</span></div>
+        <div class="benefit-content">
+          <h3>Atasi Bau Mulut Instan</h3>
+          <p>Gel probiotik & scraper efektif angkat bakteri penyebab bau mulut, hasil napas segar tahan lama.</p>
         </div>
-        <div class="desc">5 SET (5 Gel + 5 Scraper)</div>
-        <button class="btn-order" onclick="orderNow()">Ambil Super Promo</button>
       </div>
-    </div>
-    <div class="urgency">
-      <span id="stock-left">Stok tinggal 12 paket!</span> Promo berakhir dalam <span style="color:#e63c1a;" id="cd-urgency">00:00:00</span>
-    </div>
-  </section>
-  <!-- TESTIMONIALS -->
-  <section class="testimonials">
-    <h3>Apa Kata Mereka?</h3>
-    <div class="testi-list">
-      <div class="testi">
-        <span class="stars">★★★★★</span>
-        Dulu sering minder saat ngobrol karena bau mulut. Setelah pakai gel ini, mulut benar-benar fresh seharian. Scraper-nya juga nyaman dipakai!
-        <div class="name">Rina, Jakarta</div>
-      </div>
-      <div class="testi">
-        <span class="stars">★★★★★</span>
-        Produk premium, hasilnya nyata. Anak & suami juga suka! Gelnya nggak pedas, aroma lembut, langsung terasa mulut lebih bersih.
-        <div class="name">Indra, Bandung</div>
-      </div>
-      <div class="testi">
-        <span class="stars">★★★★★</span>
-        Sudah coba berbagai pembersih lidah, ini paling efektif & beda banget. Pesan paket 3, dapat 5 set, super hemat!
-        <div class="name">Lidya, Surabaya</div>
-      </div>
-      <div class="testi">
-        <span class="stars">★★★★★</span>
-        Produk mewah, packing rapi, pelayanan cepat. Gel-nya awet, scraper kuat. Mulut segar, percaya diri naik!
-        <div class="name">Fahmi, Makassar</div>
-      </div>
-    </div>
-  </section>
-  <!-- SECONDARY GIF -->
-  <img class="gif" src="https://cdn.cloudfastcdn.com/image/afcd93e77c0e008284cefe162e971269300739ce.gif" alt="Before After">
-  <!-- ORDER FORM (hidden) -->
-  <div id="order-form" style="display:none;">
-    <!-- OrderOnline Embed Code - v8.0.4 -->
-    <div class="ooef">
-      <form class="orderonline-embed-form" data-username="mila" data-product-slug="probiotic-tongue-cleaning-gel-set" data-product-id="68af4b97fa34da96080addc7" id="oo-embed-form-probiotic-tongue-cleaning-gel-set-4358" data-origin="orderonline">
-        <div class="ooef-loader"><style>.ooef-loader{visibility: hidden;opacity: 0;position: absolute;left: 0;right: 0;top: 0;bottom: 0;display: flex;justify-content: center;align-items: center;flex-direction: column;animation: ooLoadingIn 10s ease;-webkit-animation: ooLoadingIn 10s ease;animation-fill-mode: forwards;overflow: hidden}@keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}@-webkit-keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}.ooef-loader>div,.ooef-loader>div:after{border-radius: 50%;width: 2.5rem;height: 2.5rem}.ooef-loader>div{font-size: 10px;position: relative;text-indent: -9999em;border: .25rem solid #f5f5f5;border-left: .25rem solid #55c4cf;-webkit-transform: translateZ(0);-ms-transform: translateZ(0);transform: translateZ(0);-webkit-animation: ooLoading 1.1s infinite linear;animation: ooLoading 1.1s infinite linear}.ooef-loader.error>div{border-left: .25rem solid #ff4500;animation-duration: 5s}@-webkit-keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360)}}@keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360)}} </style>
-          <div aria-live="polite" role="status"><div>Loading...</div></div>
+      <div class="benefit">
+        <div class="benefit-icon"><span>🌱</span></div>
+        <div class="benefit-content">
+          <h3>Bahan Aman & Alami</h3>
+          <p>Diperkaya ekstrak alami & probiotik, tanpa alkohol, tidak pedas, aman untuk semua usia.</p>
         </div>
-      </form>
-    </div>
-    <script>
-      if (typeof xLogError != 'function') {
-        var xLogError = function (error) {
-          var req = new XMLHttpRequest();
-          var payload = JSON.stringify({ url: document.location.href, line: error.line, stack: error.stack });
-          var params = 'message=' + encodeURIComponent(error.name) + '&payload=' + encodeURIComponent(payload) + '&type=embed&level=error';
-          req.open('POST', 'https://api.orderonline.id/log', true);
-          req.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-          req.send(params);
-        };
-      }
+      </div>
+      <div class="benefit">
+        <div class="benefit-icon"><span>⏰</span></div>
+        <div class="benefit-content">
+          <h3>Praktis Dipakai Kapan Saja</h3>
+          <p>Desain compact, mudah dibawa & digunakan di rumah, kantor, maupun saat bepergian.</p>
+        </div>
+      </div>
+      <div class="benefit">
+        <div class="benefit-icon"><span>💸</span></div>
+        <div class="benefit-content">
+          <h3>Harga Ramah Dompet</h3>
+          <p>Paket hemat, lebih murah dari mouthwash premium, hasil lebih efektif!</p>
+        </div>
+      </div>
+    </section>
+    <section class="gallery" aria-label="Galeri Produk">
+      <img src="https://cdn.cloudfastcdn.com/image/2023/01/332765fca56680f90c0a6b0405ed9efb6d7b00fca7bbd66819f8e85bfdc6b956-600.jpeg" alt="Gel + Scraper">
+      <img src="https://cdn.cloudfastcdn.com/image/2023/01/9b3350c9a7ebab01d12aed1891b4bb9eedee93758567d796db4221b075b8404d-600.jpeg" alt="Aman untuk lidah">
+      <img src="https://cdn.cloudfastcdn.com/image/2023/01/9e7bd0a0c9e8a5767eb4a4963e69752ac1912c51edcf08f3417f1eda78b83664-600.jpeg" alt="Tekstur Gel Probiotik">
+      <img src="https://cdn.cloudfastcdn.com/image/2023/01/3125517cbdb11e273581b18da02957c911fe51f77b0c8b37d27ef004d62abb1f-600.jpeg" alt="Bersih dan Segar">
+      <img src="https://cdn.cloudfastcdn.com/image/2023/01/2abfbde20a4900e626d7536a49be30c141683c3ce8339e1a89b25cd299c5fa92-600.jpeg" alt="Cocok untuk semua">
+      <img src="https://cdn.cloudfastcdn.com/image/2023/01/082a165896d4ae5d1f6b72a2193288f815ee15fdfc0252cc4569dfad970ed99c-600.jpeg" alt="Sebelum dan Sesudah">
+      <video autoplay loop muted playsinline poster="https://cdn.cloudfastcdn.com/image/2022/09/7f677527947c5040fc0ae8dd9e04ea0983ec961d85a4a81b6b54e598f9f9d072.gif" style="background:#fff;">
+        <source src="https://cdn.cloudfastcdn.com/image/2022/09/7f677527947c5040fc0ae8dd9e04ea0983ec961d85a4a81b6b54e598f9f9d072.gif" type="video/mp4">
+        <img src="https://cdn.cloudfastcdn.com/image/2022/09/7f677527947c5040fc0ae8dd9e04ea0983ec961d85a4a81b6b54e598f9f9d072.gif" alt="Animasi pembersihan">
+      </video>
+      <video autoplay loop muted playsinline poster="https://cdn.cloudfastcdn.com/image/afcd93e77c0e008284cefe162e971269300739ce.gif" style="background:#fff;">
+        <source src="https://cdn.cloudfastcdn.com/image/afcd93e77c0e008284cefe162e971269300739ce.gif" type="video/mp4">
+        <img src="https://cdn.cloudfastcdn.com/image/afcd93e77c0e008284cefe162e971269300739ce.gif" alt="Animasi gel">
+      </video>
+    </section>
+    <section class="urgency-msg"><span>🔥</span><span>Stok terbatas! Lebih dari <b id="counter-sold">10.000</b> set terjual bulan ini. Segera pesan sebelum harga naik!</span></section>
+    <section class="testimonials-wrap" aria-label="Testimoni Pelanggan">
+      <div class="testimonial">
+        <img class="testimonial-avatar" src="https://randomuser.me/api/portraits/women/60.jpg" alt="Testimoni">
+        <div class="testimonial-content">
+          <div class="name">Siti Rahma</div>
+          <div class="stars">★★★★★</div>
+          <div class="text">Awalnya ragu, tapi setelah pakai gel ini, bau mulut langsung hilang! Scraper-nya lembut, nggak bikin lidah sakit. Harga hemat, pengiriman cepat. Rekomendasi banget!</div>
+        </div>
+      </div>
+      <div class="testimonial">
+        <img class="testimonial-avatar" src="https://randomuser.me/api/portraits/men/44.jpg" alt="Testimoni">
+        <div class="testimonial-content">
+          <div class="name">Agus Prasetyo</div>
+          <div class="stars">★★★★★</div>
+          <div class="text">Sangat praktis, bisa dibawa ke kantor. Napas jadi segar seharian, istri juga suka! Paket buy 2 get 1 sangat worth it!</div>
+        </div>
+      </div>
+      <div class="testimonial">
+        <img class="testimonial-avatar" src="https://randomuser.me/api/portraits/women/32.jpg" alt="Testimoni">
+        <div class="testimonial-content">
+          <div class="name">Melani Putri</div>
+          <div class="stars">★★★★★</div>
+          <div class="text">Produk ini beda dari mouthwash biasa, hasilnya lebih terasa! Anak-anak juga suka karena nggak pedas. Repeat order!</div>
+        </div>
+      </div>
+      <div class="testimonial">
+        <img class="testimonial-avatar" src="https://randomuser.me/api/portraits/men/21.jpg" alt="Testimoni">
+        <div class="testimonial-content">
+          <div class="name">Fajar Saputra</div>
+          <div class="stars">★★★★★</div>
+          <div class="text">Baru pertama coba, langsung suka! Lidah bersih, harga murah banget untuk kualitas sebagus ini. Pesan lagi buat orang tua.</div>
+        </div>
+      </div>
+    </section>
+    <a id="order"></a>
+    <section aria-label="Form Pemesanan">
+      <!-- OrderOnline Embed Code - v8.0.4 -->
+      <div class="ooef">
+        <form class="orderonline-embed-form" data-username="mila" data-product-slug="probiotic-tongue-cleaning-gel-set" data-product-id="68af4b97fa34da96080addc7" id="oo-embed-form-probiotic-tongue-cleaning-gel-set-4358" data-origin="orderonline">
+          <div class="ooef-loader"><style>.ooef-loader{visibility: hidden;opacity: 0;position: absolute;left: 0;right: 0;top: 0;bottom: 0;display: flex;justify-content: center;align-items: center;flex-direction: column;animation: ooLoadingIn 10s ease;-webkit-animation: ooLoadingIn 10s ease;animation-fill-mode: forwards;overflow: hidden}@keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}@-webkit-keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}.ooef-loader>div,.ooef-loader>div:after{border-radius: 50%;width: 2.5rem;height: 2.5rem}.ooef-loader>div{font-size: 10px;position: relative;text-indent: -9999em;border: .25rem solid #f5f5f5;border-left: .25rem solid #55c4cf;-webkit-transform: translateZ(0);-ms-transform: translateZ(0);transform: translateZ(0);-webkit-animation: ooLoading 1.1s infinite linear;animation: ooLoading 1.1s infinite linear}.ooef-loader.error>div{border-left: .25rem solid #ff4500;animation-duration: 5s}@-webkit-keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}@keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}</style><div aria-live="polite" role="status"><div>Loading...</div></div></div>
+        </form>
+      </div>
+      <script>
+      if (typeof xLogError != 'function') { var xLogError = function (error) { var req = new XMLHttpRequest(); var payload = JSON.stringify({ url: document.location.href, line: error.line, stack: error.stack }); var params = 'message=' + encodeURIComponent(error.name) + '&payload=' + encodeURIComponent(payload) + '&type=embed&level=error'; req.open('POST', 'https://api.orderonline.id/log', true); req.setRequestHeader('Content-type', 'application/x-www-form-urlencoded'); req.send(params); }; }
       try {
-        if (typeof xEmbedScript != 'function') {
-          var xEmbedScript = function () {
-            !function(w, d, e, v, id, t, s) {
-              if (d.getElementById(id)) return; t = d.createElement(e);t.async = !0;t.src = v;t.id = id;
-              s = d.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s);
-            }(window, document, 'script', 'https://cdn.orderonline.id/js/embed-v2-slim.min.js?v=8.0.4', 'oo-embed-js');
-          };
-        }
-        if (typeof xEmbedInit != 'function') {
-          var xEmbedInit = function (w, n) {
-            if (w.ooe) return; n = w.ooe = function() { n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments) };
-            if (!w._ooe) w._ooe = n; n.push = n;n.loaded = !0;n.version = '8.0.4';n.queue = [];
-          };
-        }
-        xEmbedInit(window);
-        ooe('setup', 'redirect', 'https://mila.orderonline.id');
+        if (typeof xEmbedScript != 'function') { var xEmbedScript = function () { !function(w, d, e, v, id, t, s) { if (d.getElementById(id)) return; t = d.createElement(e);t.async = !0;t.src = v;t.id = id; s = d.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s); }(window, document, 'script', 'https://cdn.orderonline.id/js/embed-v2-slim.min.js?v=8.0.4', 'oo-embed-js'); }; }
+        if (typeof xEmbedInit != 'function') { var xEmbedInit = function (w, n) { if (w.ooe) return; n = w.ooe = function() { n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments) }; if (!w._ooe) w._ooe = n; n.push = n;n.loaded = !0;n.version = '8.0.4';n.queue = []; }; }
+        xEmbedInit(window); ooe('setup', 'redirect', 'https://mila.orderonline.id');
         ooe('init', '5f1a7b8fa9bf807da24d83bb', '68af4b97fa34da96080addc7', '68af4b97fa34da96080addc8', 'oo-embed-form-probiotic-tongue-cleaning-gel-set-4358', {"mode":"page","action":"Klik untuk pemesanan","title":"Form Pemesanan","triggerPixel":true,"triggerGtm":true});
         if (!window.jQuery) {
           !function(w, d, e, v, id, t, s) {
-            if (d.getElementById(id)) return; t = d.createElement(e);t.async = !0;t.src = v;t.id = id; t.addEventListener('load', xEmbedScript);
-            s = d.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s);
+            if (d.getElementById(id)) return; t = d.createElement(e);t.async = !0;t.src = v;t.id = id;
+            t.addEventListener('load', xEmbedScript); s = d.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s);
           }(window, document, 'script', 'https://cdn.orderonline.id/js/vendor/jquery.min.js', 'oo-embed-jquery');
         } else { xEmbedScript(); }
       } catch (e) { xLogError(e); throw e; }
-    </script>
-    <!-- End OrderOnline Embed Code -->
-  </div>
-  <!-- STICKY PRICE BANNER -->
-  <div class="sticky-banner">
-    <div class="left">
-      <span class="price">Mulai <span id="sticky-price">Rp149.000</span></span>
-      <span class="old">Rp259.000</span>
-      <span class="desc">+ Gratis Scraper</span>
+      </script>
+    </section>
+    <div class="footer">
+      <div>Copyright &copy; 2025 | Probiotic Tongue Cleaning Gel Set</div>
+      <a href="https://shopee.co.id/EELHOE-Gel-Pembersih-Lidah-Sikat-Penyegar-Melawan-Bau-Mulut-Tongue-Cleansing-Gel-YY035-i.1264495768.29160757000?xptdk=84a34117-2883-4ac6-8b49-a477afdda5b7" target="_blank" rel="noopener">Lihat di Shopee</a>
+      &nbsp;|&nbsp;
+      <a href="https://www.collectale.com/products/gel-2-2-2-3" target="_blank" rel="noopener">Referensi Produk</a>
     </div>
-    <button class="btn-order" onclick="orderNow()">Pesan Sekarang</button>
+  </main>
+  <div class="sticky-order-bar" id="sticky-bar">
+    <span class="sticky-price"><span class="strike">Rp179.000</span> <span class="price-now">Rp149.000</span></span>
+    <button class="sticky-order-btn" id="stickyCta">Pesan Sekarang</button>
   </div>
-  <!-- SCRIPTS -->
   <script>
-    // Auto scroll to order form & show form modal
-    function orderNow() {
-      window.scrollTo({top: 0, behavior: 'smooth'});
-      setTimeout(function(){
-        window.location.href = "#order-form";
-        // Open in same tab
-        document.getElementById('order-form').style.display = "block";
-        document.getElementById('order-form').scrollIntoView({behavior: 'smooth'});
-      }, 350);
+    // Countdown to end of month, Jakarta TZ
+    function updateCountdown() {
+      const now = new Date();
+      const tz = now.getTime() + (now.getTimezoneOffset() + -420) * 60000; // GMT+7
+      const d = new Date(tz);
+      const year = d.getFullYear(), month = d.getMonth();
+      const lastDay = new Date(year, month+1, 0, 23, 59, 59);
+      const diff = lastDay - d;
+      let h = Math.floor(diff/36e5), m = Math.floor(diff/6e4)%60, s = Math.floor(diff/1e3)%60;
+      document.getElementById('cd-h').textContent = h.toString().padStart(2,'0');
+      document.getElementById('cd-m').textContent = m.toString().padStart(2,'0');
+      document.getElementById('cd-s').textContent = s.toString().padStart(2,'0');
     }
+    setInterval(updateCountdown, 1000); updateCountdown();
 
-    // Simple dynamic counters for online viewers/sales
-    function animateCounter(id, start, end, duration) {
-      let el = document.getElementById(id);
-      if (!el) return;
-      let range = end - start, current = start, increment = range / (duration/30), step = 0;
-      function update() {
-        current += increment;
-        step++;
-        if ((increment > 0 && current >= end) || (increment < 0 && current <= end)) current = end;
-        el.textContent = Math.floor(current).toLocaleString('id-ID');
-        if (step*30 < duration) setTimeout(update, 30);
+    // Counter animation
+    let soldVal = 10000, i = 0, counter = document.getElementById('counter-sold');
+    function animateCounter() {
+      if (i < soldVal) {
+        let step = Math.ceil((soldVal-i)/57);
+        i += step;
+        if (i > soldVal) i = soldVal;
+        counter.textContent = i.toLocaleString('id-ID');
+        setTimeout(animateCounter, 23);
+      } else {
+        counter.textContent = soldVal.toLocaleString('id-ID');
       }
-      update();
     }
-    // Animate on load
-    document.addEventListener('DOMContentLoaded', function() {
-      // Animate sold
-      animateCounter('sold-counter', 10523, 10823, 1600);
-      // Animate viewers
-      animateCounter('online-viewers', 99, 135, 1200);
-      // Animate today orders
-      animateCounter('recent-orders', 3, 21, 1400);
-    });
+    animateCounter();
 
-    // Promo countdown timer
-    function setCountdown(hours, mins, secs) {
-      let end = new Date();
-      end.setHours(end.getHours() + hours, end.getMinutes() + mins, end.getSeconds() + secs);
-      function tick() {
-        let now = new Date();
-        let rem = Math.max(0, Math.floor((end-now)/1000));
-        let h = Math.floor(rem/3600), m = Math.floor((rem%3600)/60), s = rem%60;
-        document.getElementById('cd-h').textContent = (h<10?'0':'')+h;
-        document.getElementById('cd-m').textContent = (m<10?'0':'')+m;
-        document.getElementById('cd-s').textContent = (s<10?'0':'')+s;
-        document.getElementById('cd-urgency').textContent = (h<10?'0':'')+h+':'+(m<10?'0':'')+m+':'+(s<10?'0':'')+s;
-        if(rem > 0) setTimeout(tick, 1000);
+    // Sticky bar CTA scroll to order
+    document.getElementById('stickyCta').onclick =
+    document.getElementById('cta1').onclick = function(e){
+      e.preventDefault();
+      document.getElementById('order').scrollIntoView({behavior:'smooth'});
+    };
+
+    // Sticky bar hide when order form in view (mobile UX)
+    function stickyBarControl() {
+      const bar = document.getElementById('sticky-bar');
+      const orderSec = document.getElementById('order');
+      if (!orderSec) return;
+      const rect = orderSec.getBoundingClientRect();
+      if (rect.top < window.innerHeight/2) {
+        bar.style.display = 'none';
+      } else {
+        bar.style.display = 'flex';
       }
-      tick();
     }
-    // Set 1 hour 30 min promo timer
-    setCountdown(1, 30, 0);
-
-    // Stock left randomizer
-    function randomStock() {
-      let left = Math.floor(Math.random()*4) + 10;
-      document.getElementById('stock-left').textContent = 'Stok tinggal '+left+' paket!';
-    }
-    setInterval(randomStock, 7000);
-    randomStock();
+    window.addEventListener('scroll', stickyBarControl);
+    window.addEventListener('resize', stickyBarControl);
+    stickyBarControl();
   </script>
-  <!-- GITHUB PAGES HINT -->
-  <!--
-    To deploy:
-    1. Push this file to your repository (e.g. in main branch)
-    2. Enable GitHub Pages in repo settings: Source = main branch, / (root)
-    3. Access at https://{username}.github.io/{repo}/
-  -->
 </body>
 </html>
