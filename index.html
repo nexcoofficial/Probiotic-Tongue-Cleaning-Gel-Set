@@ -348,10 +348,10 @@
       <div class="badge-sale">PAKET HEMAT!</div>
     </div>
     <div class="countdown-wrap" id="countdown">
-      <div class="countdown-segment"><span>Jam</span><b id="cd-h">00</b></div>
+      <div class="countdown-segment"><span>Jam</span><b id="cd-h">01</b></div>
       <div class="countdown-segment"><span>Menit</span><b id="cd-m">00</b></div>
       <div class="countdown-segment"><span>Detik</span><b id="cd-s">00</b></div>
-      <div style="font-size:.95em; color:var(--danger);font-weight:700">PROMO AKHIR BULAN!</div>
+      <div style="font-size:.95em; color:var(--danger);font-weight:700">PROMO TERBATAS!</div>
     </div>
     <a href="#order" class="order-btn" id="cta1">Pesan Sekarang</a>
   </header>
@@ -494,15 +494,23 @@
     <button class="sticky-order-btn" id="stickyCta">Pesan Sekarang</button>
   </div>
   <script>
-    // Countdown to end of month, Jakarta TZ
+    // 1 hour countdown timer
     function updateCountdown() {
       const now = new Date();
-      const tz = now.getTime() + (now.getTimezoneOffset() + -420) * 60000; // GMT+7
-      const d = new Date(tz);
-      const year = d.getFullYear(), month = d.getMonth();
-      const lastDay = new Date(year, month+1, 0, 23, 59, 59);
-      const diff = lastDay - d;
-      let h = Math.floor(diff/36e5), m = Math.floor(diff/6e4)%60, s = Math.floor(diff/1e3)%60;
+      const endTime = new Date(now.getTime() + 60 * 60 * 1000); // 1 hour from now
+      const diff = endTime - now;
+      
+      if (diff <= 0) {
+        document.getElementById('cd-h').textContent = '00';
+        document.getElementById('cd-m').textContent = '00';
+        document.getElementById('cd-s').textContent = '00';
+        return;
+      }
+      
+      let h = Math.floor(diff/36e5);
+      let m = Math.floor((diff % 36e5) / 6e4);
+      let s = Math.floor((diff % 6e4) / 1e3);
+      
       document.getElementById('cd-h').textContent = h.toString().padStart(2,'0');
       document.getElementById('cd-m').textContent = m.toString().padStart(2,'0');
       document.getElementById('cd-s').textContent = s.toString().padStart(2,'0');
